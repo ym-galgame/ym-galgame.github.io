@@ -1,0 +1,1 @@
+# ym-galgame.github.io
