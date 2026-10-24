@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>月幕 Galgame 官网导航｜游戏资料、玩家社区与资源入口</title>
+  <meta name="description" content="月幕 Galgame 官网导航，直达游戏档案、角色图鉴、专栏资讯、玩家手记、画札与安利墙。发现、了解并记录你喜欢的视觉小说。">
+  <meta name="keywords" content="月幕Galgame,月幕官网,Galgame导航,Galgame档案,Galgame专栏,Galgame手记,Galgame画札,视觉小说">
+  <meta name="author" content="月幕 Galgame">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#11102b">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="月幕 Galgame">
+  <meta property="og:title" content="月幕 Galgame 官网导航｜在月色里，遇见下一个故事">
+  <meta property="og:description" content="游戏资料、玩家社区与资源入口，一页直达。发现视觉小说与文字冒险的叙事魅力。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="月幕 Galgame 官网导航">
+  <meta name="twitter:description" content="清晰、简洁的 Galgame 全年龄向导航页面。">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "月幕 Galgame 官网导航",
+    "alternateName": "YMGAL Navigation",
+    "inLanguage": "zh-CN",
+    "description": "直达月幕游戏档案、角色图鉴、专栏资讯、玩家手记、画札与安利墙的全年龄向导航页面。",
+    "about": ["月幕Galgame", "Galgame档案", "视觉小说", "文字冒险游戏"]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            night: '#11102b',
+            ink: '#191735',
+            lavender: '#a99bff',
+            moon: '#f7d58a',
+            mist: '#b9b6d3'
+          },
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans SC', 'Microsoft YaHei', 'sans-serif'],
+            display: ['Noto Serif SC', 'Songti SC', 'STSong', 'serif']
+          },
+          boxShadow: {
+            glow: '0 0 60px rgba(169,155,255,.18)',
+            button: '0 12px 32px rgba(247,213,138,.18)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background: #11102b; }
+    .hero-grid {
+      background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 54px 54px;
+      mask-image: linear-gradient(to bottom, black, transparent 90%);
+    }
+    .star { position:absolute; width:3px; height:3px; border-radius:50%; background:#fff; opacity:.55; animation:twinkle 4s ease-in-out infinite; }
+    .orbit { animation:spin 40s linear infinite; transform-origin:center; }
+    .float { animation:float 6s ease-in-out infinite; }
+    .float-delay { animation:float 7s ease-in-out 1s infinite; }
+    .reveal { opacity:0; transform:translateY(20px); transition:opacity .7s ease, transform .7s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    details > summary { list-style:none; }
+    details > summary::-webkit-details-marker { display:none; }
+    details[open] .faq-icon { transform:rotate(45deg); }
+    @keyframes twinkle { 0%,100%{opacity:.25;transform:scale(.8)} 50%{opacity:.9;transform:scale(1.4)} }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+    @media (prefers-reduced-motion:reduce) {
+      *,*::before,*::after { animation:none!important; scroll-behavior:auto!important; transition:none!important; }
+      .reveal { opacity:1; transform:none; }
+    }
+  </style>
+</head>
+<body class="bg-night font-sans text-white antialiased selection:bg-lavender selection:text-night">
+  <a href="#main" class="fixed left-4 top-3 z-[100] -translate-y-20 rounded-lg bg-moon px-4 py-2 text-sm font-bold text-night focus:translate-y-0">跳到主要内容</a>
+
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-night/80 backdrop-blur-xl">
+    <nav class="mx-auto flex h-[76px] max-w-7xl items-center justify-between px-5 sm:px-8" aria-label="主导航">
+      <a href="#home" class="group flex items-center gap-3" aria-label="月幕 Galgame 首页">
+        <span class="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-white/5 transition group-hover:border-lavender/40">
+          <svg width="23" height="23" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.2 15.4A8.6 8.6 0 0 1 8.6 3.8 8.7 8.7 0 1 0 20.2 15.4Z" fill="#F7D58A"/><path d="m17.5 3 .6 1.7 1.7.6-1.7.6-.6 1.7-.6-1.7-1.7-.6 1.7-.6.6-1.7Z" fill="#A99BFF"/></svg>
+        </span>
+        <span><span class="block font-display text-lg font-bold tracking-[.16em]">月幕</span><span class="block text-[9px] font-semibold tracking-[.28em] text-mist">GALGAME</span></span>
+      </a>
+      <div class="hidden items-center gap-7 text-sm text-mist md:flex">
+        <a href="#home" class="transition hover:text-white">首页</a>
+        <a href="#explore" class="transition hover:text-white">功能导航</a>
+        <a href="https://www.ymgal.games/archives" target="_blank" rel="noopener noreferrer" class="transition hover:text-white">游戏档案</a>
+        <a href="https://www.ymgal.games/co/article" target="_blank" rel="noopener noreferrer" class="transition hover:text-white">专栏资讯</a>
+        <a href="#guide" class="transition hover:text-white">如何使用</a>
+      </div>
+      <a href="https://game123.download/" target="_blank" rel="noopener noreferrer" class="hidden items-center gap-2 rounded-full bg-moon px-5 py-2.5 text-sm font-bold text-night transition hover:-translate-y-0.5 hover:bg-[#ffe5aa] sm:flex">
+        资源入口
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button id="menu-button" class="grid h-10 w-10 place-items-center rounded-lg border border-white/10 sm:hidden" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="mobile-menu">
+        <svg id="menu-icon" width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-white/5 bg-night px-5 py-5 sm:hidden">
+      <div class="flex flex-col gap-4 text-sm text-mist">
+        <a href="#home">首页</a><a href="#explore">功能导航</a><a href="https://www.ymgal.games/archives" target="_blank" rel="noopener noreferrer">游戏档案 ↗</a><a href="https://www.ymgal.games/co/article" target="_blank" rel="noopener noreferrer">专栏资讯 ↗</a><a href="#guide">如何使用</a><a href="#faq">常见问题</a>
+        <a href="https://game123.download/" target="_blank" rel="noopener noreferrer" class="mt-2 rounded-xl bg-moon px-5 py-3 text-center font-bold text-night">前往资源站 ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="relative overflow-hidden pb-24 pt-36 sm:pb-32 sm:pt-44" aria-labelledby="hero-title">
+      <div class="hero-grid pointer-events-none absolute inset-0" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute -left-32 top-20 h-96 w-96 rounded-full bg-lavender/10 blur-[110px]" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute right-0 top-0 h-[500px] w-[500px] rounded-full bg-indigo-500/10 blur-[120px]" aria-hidden="true"></div>
+      <span class="star left-[8%] top-[22%]" aria-hidden="true"></span><span class="star left-[42%] top-[16%] animation-delay-500" aria-hidden="true"></span><span class="star bottom-[18%] left-[48%]" aria-hidden="true"></span><span class="star right-[9%] top-[35%]" aria-hidden="true"></span>
+
+      <div class="relative mx-auto grid max-w-7xl items-center gap-16 px-5 sm:px-8 lg:grid-cols-[1.08fr_.92fr] lg:gap-10">
+        <div>
+          <div class="mb-7 inline-flex items-center gap-2 rounded-full border border-lavender/20 bg-lavender/[.07] px-3.5 py-2 text-xs font-medium tracking-wide text-[#c9c0ff]">
+            <span class="h-1.5 w-1.5 rounded-full bg-moon shadow-[0_0_10px_#f7d58a]"></span>
+            YMGAL · 美少女游戏综合交流平台
+          </div>
+          <h1 id="hero-title" class="font-display text-[2.8rem] font-black leading-[1.2] tracking-tight sm:text-6xl lg:text-[4.25rem]">
+            在月色里，<br>遇见下一个<span class="relative ml-1 text-moon">故事<svg class="absolute -bottom-2 left-0 w-full" viewBox="0 0 180 10" fill="none" aria-hidden="true"><path d="M3 7c46-5 110-5 174-3" stroke="#A99BFF" stroke-width="3" stroke-linecap="round" opacity=".65"/></svg></span>
+          </h1>
+          <p class="mt-7 max-w-xl text-base leading-8 text-mist sm:text-lg">
+            从发现作品，到查阅档案、阅读评测、记录感悟。这里汇集月幕的核心功能与实用入口，陪你走完一段完整的 Galgame 旅程。
+          </p>
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <a href="https://game123.download/" target="_blank" rel="noopener noreferrer" class="group inline-flex min-h-[58px] items-center justify-center gap-3 rounded-2xl bg-moon px-7 text-base font-extrabold text-night shadow-button transition duration-300 hover:-translate-y-1 hover:bg-[#ffe5aa] focus:outline-none focus:ring-4 focus:ring-moon/25">
+              进入 Galgame 资源站
+              <svg class="transition-transform group-hover:translate-x-1" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://www.ymgal.games/" target="_blank" rel="noopener noreferrer" class="group inline-flex min-h-[58px] items-center justify-center gap-2 rounded-2xl border border-lavender/30 bg-lavender/[.07] px-7 font-semibold text-white transition hover:-translate-y-1 hover:border-lavender/55 hover:bg-lavender/[.12]">访问月幕官网 <svg class="transition-transform group-hover:translate-x-1" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+          <div class="mt-4 flex flex-col gap-2 text-xs text-mist/70 sm:flex-row sm:gap-5">
+            <p class="flex items-center gap-2">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 5h5v5M10 14l9-9M19 14v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              资源站 · game123.download
+            </p>
+            <p class="flex items-center gap-2"><span class="text-lavender" aria-hidden="true">●</span>月幕官网 · www.ymgal.games</p>
+          </div>
+          <ul class="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-xs text-mist" aria-label="网站特点">
+            <li class="flex items-center gap-2"><span class="text-lavender">✦</span> 游戏与角色档案</li>
+            <li class="flex items-center gap-2"><span class="text-lavender">✦</span> 专栏与玩家评价</li>
+            <li class="flex items-center gap-2"><span class="text-lavender">✦</span> 手记与画札分享</li>
+          </ul>
+        </div>
+
+        <div class="relative mx-auto h-[440px] w-full max-w-[500px] sm:h-[510px]" aria-label="月色下的故事书架插画" role="img">
+          <svg class="absolute inset-0 h-full w-full" viewBox="0 0 500 510" fill="none" aria-hidden="true">
+            <circle cx="270" cy="240" r="175" stroke="#A99BFF" stroke-opacity=".12"/>
+            <g class="orbit"><ellipse cx="270" cy="240" rx="215" ry="140" transform="rotate(-25 270 240)" stroke="#A99BFF" stroke-opacity=".22" stroke-dasharray="4 9"/><circle cx="74" cy="323" r="5" fill="#F7D58A"/></g>
+            <circle cx="292" cy="195" r="112" fill="url(#moonGlow)" opacity=".8"/>
+            <circle cx="292" cy="195" r="72" fill="#F7D58A"/>
+            <circle cx="264" cy="174" r="12" fill="#E7C47A" opacity=".38"/><circle cx="318" cy="218" r="17" fill="#E7C47A" opacity=".3"/><circle cx="325" cy="164" r="8" fill="#E7C47A" opacity=".32"/>
+            <path d="m112 105 3 8 8 3-8 3-3 8-3-8-8-3 8-3 3-8ZM418 250l2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6Z" fill="#C9C0FF"/>
+            <path d="m408 92 3 8 8 3-8 3-3 8-3-8-8-3 8-3 3-8Z" fill="#F7D58A" opacity=".8"/>
+            <defs><radialGradient id="moonGlow"><stop stop-color="#F7D58A" stop-opacity=".32"/><stop offset="1" stop-color="#F7D58A" stop-opacity="0"/></radialGradient></defs>
+          </svg>
+          <div class="float absolute bottom-[54px] left-[8%] w-[76%] rotate-[-5deg] rounded-[26px] border border-white/15 bg-[#211e46]/90 p-5 shadow-2xl backdrop-blur sm:p-6">
+            <div class="flex items-center justify-between border-b border-white/10 pb-4"><span class="text-xs tracking-[.2em] text-mist">YMGAL ARCHIVE</span><span class="rounded-full bg-lavender/10 px-2.5 py-1 text-[10px] text-[#c9c0ff]">维基档案</span></div>
+            <div class="flex gap-5 pt-5">
+              <div class="grid h-28 w-20 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-[#8a7de1] to-[#393368] shadow-glow"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v16H6.5A2.5 2.5 0 0 0 4 21.5v-16ZM20 5.5A2.5 2.5 0 0 0 17.5 3H13v16h4.5a2.5 2.5 0 0 1 2.5 2.5v-16Z" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
+              <div><p class="font-display text-xl font-bold">从档案，走进故事</p><p class="mt-2 text-xs leading-6 text-mist">游戏、角色与制作人员，<br>由爱好者共同整理与补充。</p><div class="mt-3 flex gap-2"><span class="h-1 w-10 rounded-full bg-moon"></span><span class="h-1 w-5 rounded-full bg-white/15"></span><span class="h-1 w-5 rounded-full bg-white/15"></span></div></div>
+            </div>
+          </div>
+          <div class="float-delay absolute right-0 top-[56%] rounded-2xl border border-white/10 bg-white/[.07] px-4 py-3 shadow-xl backdrop-blur-md">
+            <div class="flex items-center gap-3"><span class="grid h-9 w-9 place-items-center rounded-xl bg-moon/15 text-moon">✎</span><div><p class="text-xs font-semibold">记录每一次触动</p><p class="mt-1 text-[10px] text-mist">ARTICLE · NOTES · REVIEW</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="explore" class="relative border-y border-white/5 bg-[#151331] py-24 sm:py-28" aria-labelledby="explore-title">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <div class="reveal flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+          <div><p class="mb-3 text-xs font-bold uppercase tracking-[.25em] text-lavender">Explore YMGAL</p><h2 id="explore-title" class="font-display text-3xl font-bold sm:text-4xl">一座完整的 Galgame 爱好者社区</h2></div>
+          <p class="max-w-md text-sm leading-7 text-mist">依据月幕官网公开栏目整理，<br class="hidden sm:block">从资料检索到玩家创作，一键直达。</p>
+        </div>
+        <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <a href="https://www.ymgal.games/archives" target="_blank" rel="noopener noreferrer" class="reveal group rounded-3xl border border-lavender/25 bg-lavender/[.065] p-7 transition duration-300 hover:-translate-y-1 hover:border-lavender/50 hover:bg-lavender/[.1]">
+            <div class="flex items-start justify-between"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-lavender/10 text-lavender"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span><span class="text-mist transition group-hover:translate-x-1 group-hover:text-white">↗</span></div>
+            <p class="mt-6 text-[10px] font-bold tracking-[.2em] text-lavender">CORE ARCHIVE</p><h3 class="mt-2 text-xl font-bold">Galgame 档案</h3><p class="mt-3 text-sm leading-7 text-mist">以维基模式整理游戏资料，查看作品简介、制作信息，并收藏、评分和参与讨论。</p><p class="mt-5 text-xs font-semibold text-lavender">进入游戏档案 →</p>
+          </a>
+          <a href="https://www.ymgal.games/?scroll=character/" target="_blank" rel="noopener noreferrer" class="reveal group rounded-3xl border border-white/[.08] bg-white/[.035] p-7 transition duration-300 hover:-translate-y-1 hover:border-lavender/35 hover:bg-lavender/[.07]">
+            <div class="flex items-start justify-between"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-lavender/10 text-lavender"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M4 21a8 8 0 0 1 16 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><span class="text-mist transition group-hover:translate-x-1 group-hover:text-white">↗</span></div>
+            <p class="mt-6 text-[10px] font-bold tracking-[.2em] text-lavender">CHARACTER & STAFF</p><h3 class="mt-2 text-xl font-bold">角色与 Staff</h3><p class="mt-3 text-sm leading-7 text-mist">从角色到制作人员，继续挖掘作品背后的设定、创作者与关联档案。</p><p class="mt-5 text-xs font-semibold text-lavender">浏览角色图鉴 →</p>
+          </a>
+          <a href="https://www.ymgal.games/co/article" target="_blank" rel="noopener noreferrer" class="reveal group rounded-3xl border border-white/[.08] bg-white/[.035] p-7 transition duration-300 hover:-translate-y-1 hover:border-lavender/35 hover:bg-lavender/[.07]">
+            <div class="flex items-start justify-between"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-lavender/10 text-lavender"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="text-mist transition group-hover:translate-x-1 group-hover:text-white">↗</span></div>
+            <p class="mt-6 text-[10px] font-bold tracking-[.2em] text-lavender">ARTICLES & NEWS</p><h3 class="mt-2 text-xl font-bold">专栏与资讯</h3><p class="mt-3 text-sm leading-7 text-mist">阅读感想评测、游戏盘点、攻略教程与行业资讯，看见不同玩家的理解。</p><p class="mt-5 text-xs font-semibold text-lavender">阅读最新文章 →</p>
+          </a>
+          <a href="https://www.ymgal.games/co/notes" target="_blank" rel="noopener noreferrer" class="reveal group rounded-3xl border border-white/[.08] bg-white/[.035] p-7 transition duration-300 hover:-translate-y-1 hover:border-lavender/35 hover:bg-lavender/[.07]">
+            <div class="flex items-start justify-between"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-lavender/10 text-lavender"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m4 20 4.5-1 10-10a2.1 2.1 0 0 0-3-3l-10 10L4 20ZM14 7l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="text-mist transition group-hover:translate-x-1 group-hover:text-white">↗</span></div>
+            <p class="mt-6 text-[10px] font-bold tracking-[.2em] text-lavender">PLAYER NOTES</p><h3 class="mt-2 text-xl font-bold">Galgame 手记</h3><p class="mt-3 text-sm leading-7 text-mist">记录游玩过程、游戏感悟与日常点滴，在手记广场分享属于你的旅程。</p><p class="mt-5 text-xs font-semibold text-lavender">前往手记广场 →</p>
+          </a>
+          <a href="https://www.ymgal.games/co/picset" target="_blank" rel="noopener noreferrer" class="reveal group rounded-3xl border border-white/[.08] bg-white/[.035] p-7 transition duration-300 hover:-translate-y-1 hover:border-lavender/35 hover:bg-lavender/[.07]">
+            <div class="flex items-start justify-between"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-lavender/10 text-lavender"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="10" r="2" stroke="currentColor" stroke-width="1.6"/><path d="m4 17 5-4 4 3 3-2 5 4" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span><span class="text-mist transition group-hover:translate-x-1 group-hover:text-white">↗</span></div>
+            <p class="mt-6 text-[10px] font-bold tracking-[.2em] text-lavender">IMAGE GALLERY</p><h3 class="mt-2 text-xl font-bold">Galgame 画札</h3><p class="mt-3 text-sm leading-7 text-mist">浏览玩家分享的游戏图片、设定资料、表情包与同人创作，感受作品的视觉魅力。</p><p class="mt-5 text-xs font-semibold text-lavender">查看画札 →</p>
+          </a>
+          <a href="https://www.ymgal.games/" target="_blank" rel="noopener noreferrer" class="reveal group rounded-3xl border border-moon/20 bg-moon/[.055] p-7 transition duration-300 hover:-translate-y-1 hover:border-moon/45 hover:bg-moon/[.09]">
+            <div class="flex items-start justify-between"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-moon/10 text-moon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-8-4.7-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.3-8 11-8 11Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span><span class="text-moon transition group-hover:translate-x-1">↗</span></div>
+            <p class="mt-6 text-[10px] font-bold tracking-[.2em] text-moon">RECOMMENDATIONS</p><h3 class="mt-2 text-xl font-bold">安利墙与游戏精选</h3><p class="mt-3 text-sm leading-7 text-mist">看看其他玩家正在推荐什么，从真实评分与游玩感受里找到下一部作品。</p><p class="mt-5 text-xs font-semibold text-moon">前往月幕首页 →</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 sm:py-28" aria-labelledby="resource-title">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <div class="reveal relative overflow-hidden rounded-[32px] border border-lavender/20 bg-gradient-to-br from-[#29234f] to-[#1b193a] px-7 py-10 shadow-glow sm:px-12 sm:py-14 lg:flex lg:items-center lg:justify-between lg:gap-12">
+          <div class="pointer-events-none absolute -right-16 -top-24 h-72 w-72 rounded-full bg-lavender/15 blur-[70px]" aria-hidden="true"></div>
+          <div class="relative max-w-2xl"><p class="text-xs font-bold uppercase tracking-[.24em] text-moon">Quick Access</p><h2 id="resource-title" class="mt-4 font-display text-3xl font-bold leading-snug sm:text-4xl">少一次寻找，多一个故事。</h2><p class="mt-4 text-sm leading-7 text-mist sm:text-base">已为你准备好资源站直达入口。点击按钮，将在新窗口打开外部网站。</p></div>
+          <div class="relative mt-8 shrink-0 lg:mt-0"><a href="https://game123.download/" target="_blank" rel="noopener noreferrer" class="group inline-flex w-full items-center justify-center gap-3 rounded-2xl bg-moon px-8 py-4 font-extrabold text-night shadow-button transition hover:-translate-y-1 hover:bg-[#ffe5aa] sm:w-auto">立即访问资源站<svg class="transition group-hover:translate-x-1" width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a><p class="mt-3 text-center text-[11px] text-mist">外部链接 · 请注意甄别站点内容</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guide" class="border-y border-white/5 bg-[#151331] py-24 sm:py-28" aria-labelledby="guide-title">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <div class="reveal mx-auto max-w-2xl text-center"><p class="text-xs font-bold uppercase tracking-[.25em] text-lavender">More Than An Archive</p><h2 id="guide-title" class="mt-4 font-display text-3xl font-bold sm:text-4xl">从发现到记录，不止于查找游戏</h2><p class="mt-4 text-sm leading-7 text-mist">月幕将资料、文章、评价与个人记录连接在一起，<br>覆盖一段 Galgame 旅程的不同阶段。</p></div>
+        <ol class="relative mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <li class="reveal relative rounded-3xl border border-white/[.07] bg-night/50 p-7"><span class="font-display text-5xl font-black text-lavender/20">01</span><h3 class="mt-4 text-lg font-bold">发现作品</h3><p class="mt-3 text-sm leading-7 text-mist">从游戏精选、安利墙与每月新作中，找到自己感兴趣的题材。</p><a href="https://www.ymgal.games/" target="_blank" rel="noopener noreferrer" class="mt-5 inline-block text-xs font-semibold text-lavender">浏览精选 ↗</a></li>
+          <li class="reveal relative rounded-3xl border border-white/[.07] bg-night/50 p-7"><span class="font-display text-5xl font-black text-lavender/20">02</span><h3 class="mt-4 text-lg font-bold">查阅资料</h3><p class="mt-3 text-sm leading-7 text-mist">在游戏、角色与 Staff 档案里，了解作品设定和制作背景。</p><a href="https://www.ymgal.games/archives" target="_blank" rel="noopener noreferrer" class="mt-5 inline-block text-xs font-semibold text-lavender">检索档案 ↗</a></li>
+          <li class="reveal relative rounded-3xl border border-white/[.07] bg-night/50 p-7"><span class="font-display text-5xl font-black text-lavender/20">03</span><h3 class="mt-4 text-lg font-bold">交流观点</h3><p class="mt-3 text-sm leading-7 text-mist">阅读专栏评测、参与讨论，也可以分享自己的攻略与文章。</p><a href="https://www.ymgal.games/co/article" target="_blank" rel="noopener noreferrer" class="mt-5 inline-block text-xs font-semibold text-lavender">进入专栏 ↗</a></li>
+          <li class="reveal relative rounded-3xl border border-white/[.07] bg-night/50 p-7"><span class="font-display text-5xl font-black text-lavender/20">04</span><h3 class="mt-4 text-lg font-bold">留下记录</h3><p class="mt-3 text-sm leading-7 text-mist">用手记保存游玩进度与感悟，让每一段故事都有迹可循。</p><a href="https://www.ymgal.games/co/notes" target="_blank" rel="noopener noreferrer" class="mt-5 inline-block text-xs font-semibold text-lavender">打开手记 ↗</a></li>
+        </ol>
+        <div class="reveal mt-8 flex flex-col items-center justify-between gap-5 rounded-3xl border border-white/[.08] bg-white/[.025] px-7 py-6 sm:flex-row"><div><h3 class="font-display text-lg font-bold">一起完善月幕档案</h3><p class="mt-2 text-sm text-mist">档案由编辑与爱好者共同整理，你也可以贡献自己的一份力量。</p></div><a href="https://f.ymgal.games/contributor" target="_blank" rel="noopener noreferrer" class="shrink-0 rounded-xl border border-lavender/30 px-5 py-3 text-sm font-semibold text-[#c9c0ff] transition hover:bg-lavender/10">贡献游戏档案 ↗</a></div>
+      </div>
+    </section>
+
+    <section id="faq" class="py-24 sm:py-28" aria-labelledby="faq-title">
+      <div class="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[.75fr_1.25fr] lg:gap-20">
+        <div class="reveal"><p class="text-xs font-bold uppercase tracking-[.25em] text-lavender">FAQ</p><h2 id="faq-title" class="mt-4 font-display text-3xl font-bold sm:text-4xl">一些常见问题</h2><p class="mt-4 text-sm leading-7 text-mist">关于月幕、Galgame 与导航入口，<br>或许你想先了解这些。</p></div>
+        <div class="reveal divide-y divide-white/10 border-y border-white/10">
+          <details class="group py-6" open><summary class="flex cursor-pointer items-center justify-between gap-6 font-semibold"><span>月幕 Galgame 主要有哪些功能？</span><span class="faq-icon text-2xl font-light text-lavender transition-transform">+</span></summary><p class="mt-4 pr-8 text-sm leading-7 text-mist">根据月幕官网公开栏目，目前主要包括游戏档案、角色与 Staff 资料、专栏资讯、玩家手记、画札、安利墙与 Gal 站点导航等。本页面将这些常用入口集中整理，方便直接访问。</p></details>
+          <details class="group py-6"><summary class="flex cursor-pointer items-center justify-between gap-6 font-semibold"><span>这个导航页面包含成人内容吗？</span><span class="faq-icon text-2xl font-light text-lavender transition-transform">+</span></summary><p class="mt-4 pr-8 text-sm leading-7 text-mist">不包含。本页面仅提供全年龄向的类型介绍、社区信息及外部链接，不展示成人图片、文字或相关描述。访问外部站点时，请自行留意其内容说明与适用年龄。</p></details>
+          <details class="group py-6"><summary class="flex cursor-pointer items-center justify-between gap-6 font-semibold"><span>点击资源按钮会打开哪个网站？</span><span class="faq-icon text-2xl font-light text-lavender transition-transform">+</span></summary><p class="mt-4 pr-8 text-sm leading-7 text-mist">页面中的资源按钮均指向 https://game123.download/，并会在新的浏览器窗口或标签页中打开。外部网站的内容与可用性由其运营方负责。</p></details>
+          <details class="group py-6"><summary class="flex cursor-pointer items-center justify-between gap-6 font-semibold"><span>如何选择第一部作品？</span><span class="faq-icon text-2xl font-light text-lavender transition-transform">+</span></summary><p class="mt-4 pr-8 text-sm leading-7 text-mist">优先考虑自己平时喜欢的小说、电影或动画题材，再参考作品篇幅、语言与玩家评价。比起追逐所谓“必玩榜”，符合当下兴趣的选择通常更适合入门。</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/5 bg-[#0d0c22]">
+    <div class="mx-auto max-w-7xl px-5 py-12 sm:px-8">
+      <div class="flex flex-col justify-between gap-8 md:flex-row md:items-center">
+        <a href="#home" class="flex items-center gap-3"><span class="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-white/5"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.2 15.4A8.6 8.6 0 0 1 8.6 3.8 8.7 8.7 0 1 0 20.2 15.4Z" fill="#F7D58A"/></svg></span><span><span class="block font-display font-bold tracking-[.16em]">月幕 Galgame</span><span class="mt-1 block text-[10px] tracking-[.15em] text-mist">让每一个好故事被遇见</span></span></a>
+        <div class="flex flex-wrap gap-x-6 gap-y-3 text-xs text-mist"><a href="https://www.ymgal.games/" target="_blank" rel="noopener noreferrer" class="hover:text-white">月幕官网 ↗</a><a href="#explore" class="hover:text-white">功能导航</a><a href="#guide" class="hover:text-white">如何使用</a><a href="#faq" class="hover:text-white">常见问题</a><a href="https://game123.download/" target="_blank" rel="noopener noreferrer" class="text-moon hover:text-[#ffe5aa]">资源入口 ↗</a></div>
+      </div>
+      <div class="mt-10 flex flex-col gap-3 border-t border-white/5 pt-6 text-[11px] leading-5 text-mist/60 sm:flex-row sm:items-center sm:justify-between"><p>© <span id="year">2026</span> 月幕 Galgame 导航 · 全年龄内容页面</p><p>外部站点内容归其运营方所有，请支持正版并遵守当地法律法规。</p></div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', String(!isOpen));
+      menuButton.setAttribute('aria-label', isOpen ? '打开导航菜单' : '关闭导航菜单');
+      mobileMenu.classList.toggle('hidden');
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.setAttribute('aria-label', '打开导航菜单');
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const revealItems = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+      }), { threshold: 0.12 });
+      revealItems.forEach(item => observer.observe(item));
+    } else {
+      revealItems.forEach(item => item.classList.add('visible'));
+    }
+  </script>
+</body>
+</html>
